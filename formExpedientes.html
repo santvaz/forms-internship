@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../bootstrap.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div>
+            <div class="text-center">
+                <h2 class="alert alert-primary text-center font-weight-light">Solicitud de acceso a expedientes
+                    administrativos</h2>
+                <div class="alert alert-warning mb-4">Los campos marcados con asterisco *, son de obligada
+                    cumplimentación
+                </div>
+            </div>
+            <div>
+                <div class="card mt-4">
+                    <h4 class="card-header text-center text-lg-left font-weight-light">Solicita<em
+                            class="text-danger">*</em>
+                    </h4>
+                    <div class="card-body">
+                        <div>
+                            <p class="text-muted">El acceso a los siguientes expedientes administrativos:<em
+                                    class="text-danger">*</em></p>
+                            <textarea name="expedientes" id="expedientes_f" class="form-control" required></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Justificación -->
+        <div class="card mt-4">
+            <h4 class="card-header text-center text-lg-left font-weight-light">Justificación<em
+                    class="text-danger">*</em>
+            </h4>
+            <div class="card-body">
+                <div>
+                    <p class="text-muted">Justificación del interés directo/legítimo en el acceso al expediente:<em
+                            class="text-danger">*</em></p>
+                    <div class="form-group row">
+                        <input name="regimenGeneral" type="checkbox" value="SI" id="regimenGeneral_f"
+                            class="form-control col-2" required>
+                        <label for="regimenGeneral_f" class="col-4 text-uppercase">
+                            Régimen general
+                        </label>
+                    </div>
+
+                    <div class="form-group row">
+                        <input name="accionUrbanistica" type="checkbox" value="SI" id="accionUrbanistica_f"
+                            class="form-control col-2" required>
+                        <label for="accionUrbanistica_f" class="col-4 text-uppercase">
+                            Ejercicio de acción pública urbanística
+                        </label>
+                    </div>
+
+                    <div class="form-group row">
+                        <input name="leyTransparencia" type="checkbox" value="SI" id="leyTransparencia_f"
+                            class="form-control col-2" required>
+                        <label for="leyTransparencia_f" class="col-4 text-uppercase">
+                            Solicitud de acceso - ley de transparencia
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <h4 class="card-header text-center text-lg-left font-weight-light">Documentación aportada
+            </h4>
+            <div class="card-body">
+                <div>
+                    <p class="text-muted">Relacione la documentación que se adjunta a la presente (más adelante podrá
+                        adjuntar los ficheros correspondientes relacionados en este apartado)</p>
+                    <textarea name="documentacionAportada" id="documentacionAportada_f" class="form-control"
+                        required></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
