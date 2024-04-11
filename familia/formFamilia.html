@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../bootstrap.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div>
+            <div class="text-center">
+                <h2 class="alert alert-primary text-center font-weight-light">Solicitud de ayuda por nacimiento,
+                    adopción o acogimiento</h2>
+                <div class="alert alert-warning mb-4">Los campos marcados con asterisco *, son de obligada
+                    cumplimentación
+                </div>
+            </div>
+            <div>
+                <!-- Datos del solicitante beneficiario -->
+                <div class="card mt-4">
+                    <h4 class="card-header text-center text-lg-left font-weight-light">Datos del solicitante
+                        beneficiario</h4>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <p>Parentesco del solicitante:<em class="text-danger">*</em></p>
+                            <select class="form-control" name="parentesco" required>
+                                <option value="">Seleccione una opción</option>
+                                <option value="Madre">Madre</option>
+                                <option value="Padre">Padre</option>
+                                <option value="Tutor">Tutor</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Datos del otro progenitor -->
+                <div class="card mt-4">
+                    <h4 class="card-header text-center text-lg-left font-weight-light">Datos del otro progenitor</h4>
+                    <div class="card-body row">
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <p>
+                                    Nombre:</p>
+                                <input class="form-control" name="PROGENITOR_NOMBRE" placeholder="Nombre" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="form-group">
+                                <p>
+                                    Apellidos:</p>
+                                <input class="form-control" name="PROGENITOR_APELLIDOS" placeholder="Apellidos"
+                                    type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="form-group">
+                                <p>
+                                    DNI/NIE/PAS:</p>
+                                <input class="form-control" name="PROGENITOR_ID" placeholder="DNI, NIE o PAS"
+                                    type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Datos del menor nacido, adoptado o acogido -->
+                <div class="card mt-4">
+                    <h4 class="card-header text-center text-lg-left font-weight-light">Datos del otro progenitor</h4>
+                    <div class="card-body row">
+                        <div class="col-sm-12">
+                            <p>
+                                Datos del 1 menor:<em class="text-danger">*</em>
+                            </p>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <input class="form-control" name="MENOR1_NOMBRE" placeholder="Nombre" type="text"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="form-group">
+                                <input class="form-control" name="MENOR1_APELLIDO" placeholder="Apellidos" type="text"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <p>
+                                Datos del 2 menor:</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <input class="form-control" name="MENOR2_NOMBRE" placeholder="Nombre" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="form-group">
+                                <input class="form-control" name="MENOR2_APELLIDO" placeholder="Apellidos" type="text">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <p>
+                                Datos del 3 menor:</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <input class="form-control" name="MENOR3_NOMBRE" placeholder="Nombre" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="form-group">
+                                <input class="form-control" name="MENOR3_APELLIDO" placeholder="Apellidos" type="text">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <p>
+                                Datos del 4 menor:</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <input class="form-control" name="MENOR4_NOMBRE" placeholder="Nombre" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="form-group">
+                                <input class="form-control" name="MENOR4_APELLIDO" placeholder="Apellidos" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Declaración responsable -->
+                <div class="card mt-4">
+                    <h4 class="card-header text-center text-lg-left font-weight-light">Declaración responsable<em
+                            class="text-danger">*</em></h4>
+                    <div class="card-body">
+                        <div>
+                            <div class="form-group row">
+                                <input name="DECLARACION_NO_PROHIBICIONES" type="checkbox" value="SI"
+                                    id="DECLARACION_NO_PROHIBICIONES" class="form-control col-2" required>
+                                <label for="DECLARACION_NO_PROHIBICIONES" class="col-8 text-uppercase">
+                                    El solicitante declara no estar incurso en ninguna de las prohibiciones para obtener
+                                    la
+                                    condición de
+                                    beneficiario de subvenciones contempladas en el artículo 13 de la Ley 38/2003, de 17
+                                    de
+                                    noviembre, General de Subvenciones; haciendo constar expresamente que el solicitante
+                                    se
+                                    halla al corriente de las obligaciones tributarias, de las obligaciones con la
+                                    Seguridad
+                                    Social y de las obligaciones pecuniarias de cualquier clase con la Comunidad de
+                                    Madrid o
+                                    Entes dependientes de la misma.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="form-group row">
+                                <input name="DECLARACION_NO_DEUDAS" id="DECLARACION_NO_DEUDAS" type="checkbox"
+                                    value="SI" class="form-control col-2" required>
+                                <label for="DECLARACION_NO_DEUDAS" class="col-8 text-uppercase"> El solicitante
+                                    declara que ningún miembro de su unidad familiar tiene deudas con el Ayuntamiento de
+                                    San
+                                    Lorenzo de El Escorial.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Datos personales -->
+                <div class="card mt-4">
+                    <h4 class="card-header text-center text-lg-left font-weight-light">Datos personales<em
+                            class="text-danger">*</em></h4>
+                    <div class="card-body">
+                        <div>
+                            <div class="form-group row">
+                                <input name="AUTORIZO_CONSULTA_PADRON" type="checkbox" value="SI"
+                                    id="AUTORIZO_CONSULTA_PADRON" class="form-control col-2" required>
+                                <label for="AUTORIZO_CONSULTA_PADRON" class="col-8 text-uppercase">
+                                    El solicitante autoriza al Ayuntamiento de San Lorenzo de El Escorial a consultar
+                                    los datos existentes en el padrón municipal de habitantes.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Protección de datos -->
+                <div class="card mt-4">
+                    <h4 class="card-header text-center text-lg-left font-weight-light">Protección de datos</h4>
+                    <div class="card-body">
+                        <div>
+                            <p>Los datos de este formulario serán incorporados en el tratamiento Ayuda por Nacimiento,
+                                Adopción o Acogimiento, cuyo responsable es el Ayuntamiento de San Lorenzo de El
+                                Escorial y el órgano de gestión la Concejalía de Familia. Tiene como finalidad poder
+                                tramitar estas ayudas. La legitimación es poder dar las ayudas a instancia del
+                                interesado. Puede ejercer los derechos de acceso, rectificación, cancelación y oposición
+                                mediante solicitud en el Registro de Entrada de este Ayuntamiento o por sede
+                                electrónica. Delegación de Protección de datos: dpd@aytosanlorenzo.es</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

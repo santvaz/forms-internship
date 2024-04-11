@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../bootstrap.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div>
+            <div class="text-center">
+                <h2 class="alert alert-primary text-center font-weight-light">SOLICITUD DE QUEMA DE RESTOS VEGETALES
+                </h2>
+                <div class="alert alert-info mb-4">(EXCLUSIVAMENTE EN TERRERO URBANO Y URBANIZACIONES)
+                </div>
+            </div>
+
+            <!-- Datos de la persona interesada -->
+            <div>
+                <div class="card mt-4">
+                    <h4 class="card-header text-center text-lg-left font-weight-light">DATOS DE LA PERSONA INTERESADA :
+                        (Encargado de la realización de la quema)
+                    </h4>
+                    <div class="card-body">
+                        <!-- Datos Interesado -->
+                        <div class="form-group">
+                            <p>Nombre y apellidos o razón social:<small class="alert alert-warning p-0 m-1">Máximo 90
+                                    caracteres</small></p>
+                            <input class="form-control" id="apellidosynombreinteresado_f"
+                                name="apellidosynombreinteresado" type="text" maxlength="90">
+
+                        </div>
+                        <div class="form-group">
+                            <p>Documento de identificación (DNI, NIF, NIE, etc.):</p>
+                            <input class="form-control col-4" id="nifinteresado_f" name="nifinteresado" type="text"
+                                maxlength="9">
+                        </div>
+                        <div class="form-group">
+                            <p>Nombre de la vía pública:</p>
+                            <input class="form-control" id="viapublicainteresado_f" name="viapublicainteresado"
+                                type="text">
+                        </div>
+                        <!-- Domicilio Interesado -->
+                        <div class="row">
+                            <div class="form-group col-4 col-md-2">
+                                <p>Número:</p>
+                                <input class="form-control" maxlength="3" id="numviainteresado_f"
+                                    name="numviainteresado" type="text">
+                            </div>
+                            <div class="form-group col-4 col-md-2">
+                                <p>Portal:</p>
+                                <input class="form-control" maxlength="3" id="portalinteresado_f"
+                                    name="portalinteresado" type="text">
+                            </div>
+                            <div class="form-group col-4 col-md-2">
+                                <p>Escalera:</p>
+                                <input class="form-control" maxlength="3" id="escalerainteresado_f"
+                                    name="escalerainteresado" type="text">
+                            </div>
+                            <div class="form-group col-4 col-md-2">
+                                <p>Piso:</p>
+                                <input class="form-control" maxlength="3" id="pisointeresado_f" name="pisointeresado"
+                                    type="text">
+                            </div>
+                            <div class="form-group col-4 col-md-2">
+                                <p>Puerta:</p>
+                                <input class="form-control" maxlength="3" id="puertainteresado_f"
+                                    name="puertainteresado" type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <p>Municipio:</p>
+                                <input class="form-control" maxlength="3" id="municipio_f" name="municipio" type="text">
+                            </div>
+                            <div class="form-group col-6">
+                                <p>Código Postal:</p>
+                                <input class="form-control" maxlength="3" id="cpostal_f" name="cpostal" type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-4">
+                                <p>Teléfono fijo:</p>
+                                <input class="form-control" maxlength="3" id="telFijo_f" name="telFijo" type="text">
+                            </div>
+                            <div class="form-group col-4">
+                                <p>Teléfono móvil:</p>
+                                <input class="form-control" maxlength="3" id="telMovil_f" name="telMovil" type="text">
+                            </div>
+                            <div class="form-group col-4">
+                                <p>Correo:</p>
+                                <input class="form-control" maxlength="3" id="email_f" name="email" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Datos de la persona interesada -->
+
+            <!-- Datos a efectos de notificaciones -->
+            <div>
+                <div class="card mt-4">
+                    <h4 class="card-header text-center text-lg-left font-weight-light text-uppercase">Datos a efectos de
+                        notificaciones
+                    </h4>
+                    <div class="card-body">
+                        <div>
+                            <div class="form-group row">
+                                <input name="correoPostal" type="checkbox" value="SI" id="correoPostal_f"
+                                    class="form-control col-2">
+                                <label for="correoPostal_f" class="col-4 text-uppercase">
+                                    Correo postal
+                                </label>
+                            </div>
+
+                            <div class="form-group row">
+                                <input name="correoElectronico" type="checkbox" value="SI" id="correoElectronico_f"
+                                    class="form-control col-2">
+                                <label for="correoElectronico_f" class="col-4 text-uppercase">
+                                    Correo electrónico
+                                </label>
+                            </div>
+
+                            <div class="form-group row">
+                                <input name="recogidaMano" type="checkbox" value="SI" id="recogidaMano_f"
+                                    class="form-control col-2">
+                                <label for="recogidaMano_f" class="col-4 text-uppercase">
+                                    Recogida en mano
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Datos a efectos de notificaciones -->
+
+            <!-- Datos de la solicitud -->
+            <div>
+                <div class="card mt-4">
+                    <h4 class="card-header text-center text-lg-left font-weight-light text-uppercase">Datos de la
+                        solicitud
+                    </h4>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="form-group col-12">
+                                <p>Dirección de la parcela:</p>
+                                <input class="form-control col-4" id="DirParcela_f" name="DirParcela" type="text">
+                            </div>
+                            <div class="form-group col-12">
+                                <p>Volumen de la quema (m<sup>3</sup>):</p>
+                                <input class="form-control" id="volQuema_f" name="volQuema" type="text">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-6 col-md-4">
+                                <p>Fecha inicio de la quema:</p>
+                                <input class="form-control" id="fechaQuema_f" name="fechaQuema" type="text">
+                            </div>
+                            <div class="form-group col-6 col-md-4">
+                                <p>Fecha fin de la quema:</p>
+                                <input class="form-control" id="fechaFinQuema_f" name="fechaFinQuema" type="text">
+                            </div>
+                            <div class="form-group col-6 col-md-4">
+                                <p>Hora:</p>
+                                <input class="form-control" id="horaQuema_f" name="horaQuema" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Datos de la solicitud -->
+
+            <!-- Información adicional -->
+            <div>
+                <div class="card mt-4">
+                    <h4 class="card-header text-center text-lg-left font-weight-light text-uppercase">Información
+                        adicional
+                    </h4>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <p>Distancia a zona arbolada, viviendas, toma de agua, etc... </p>
+                            <textarea class="form-control" rows="5" name="croquis" id="croquis_f"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Fin Información adicional -->
+        </div>
+    </div>
+</body>
+
+</html>

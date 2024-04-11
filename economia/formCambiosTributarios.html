@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../bootstrap.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div>
+            <div class="text-center">
+                <h2 class="alert alert-primary text-center font-weight-light">Comunicación cambio de datos personales a
+                    efectos tributarios</h2>
+                <div class="alert alert-warning mb-4">Los campos marcados con asterisco *, son de obligada
+                    cumplimentación
+                </div>
+            </div>
+            <div>
+                <div class="card mt-4">
+                    <h4 class="card-header text-center text-lg-left font-weight-light">En representación de la persona
+                        fisica o juridica con los siguientes datos
+                    </h4>
+                    <div class="card-body">
+                        <p class="text-muted">Que a efectos tributarios solicito que se modifique los datos que tiene a
+                            su disposicion en la base de datos de terceros de su Ayuntamiento por:</p>
+                        <div class="form-group">
+                            <label for="nombreComercial_f">(A1) Nombre Comercial:<em class="text-danger">*</em></label>
+                            <input type="text" class="form-control" id="nombreComercial_f" name="nombreComercial"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nombreCenso_f">(A2) Nombre en el Censo de Actividades Económicas:<em
+                                    class="text-danger">*</em></label>
+                            <input type="text" class="form-control" id="nombreCenso_f" name="nombreCenso" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="domicilio_f">(A3) Domicilio:<em class="text-danger">*</em></label>
+                            <input type="text" class="form-control" id="domicilio_f" name="domicilio"
+                                placeholder="Calle, Número, Población, CP, Provincia, País" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tlf_f">(A4) Teléfono:<em class="text-danger">*</em></label>
+                            <input type="text" class="form-control" id="tlf_f" name="tlf" placeholder="000000000"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="web_f">(A5) Web:</label>
+                            <input type="text" class="form-control" id="web_f" name="web"
+                                placeholder="https://web.dominio.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="correo_f">(A6) Dirección de email:<em class="text-danger">*</em></label>
+                            <input type="email" class="form-control" id="correo_f" name="correo"
+                                placeholder="email@dominio.com" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Declaración responsable -->
+        <div class="card mt-4">
+            <h4 class="card-header text-center text-lg-left font-weight-light">Declaración responsable<em
+                    class="text-danger">*</em></h4>
+            <div class="card-body">
+                <div>
+                    <!-- DR1 -->
+                    <div class="form-group row">
+                        <input name="MUNICIPIO_IAE" type="checkbox" value="SI" id="MUNICIPIO_IAE"
+                            class="form-control col-2" required>
+                        <label for="MUNICIPIO_IAE" class="col-8 text-uppercase">
+                            (DR1)<em class="text-danger">*</em> QUE SE ENCUENTRA DADA DE ALTA EN EL IMPUESTO DE
+                            ACTIVIDADES ECONÓMICAS EN EL
+                            MUNICIPIO DE (DR2)<em class="text-danger">*</em>:
+                        </label>
+                    </div>
+
+                    <!-- DR2 -->
+                    <div class="form-group">
+                        <input class="form-control text-center" name="MUNICIPIO_IAE"
+                            placeholder="(DR2) Municipio de alta en el IAE" type="text" required>
+                    </div>
+
+                    <!-- DR3 -->
+                    <div class="form-group row">
+                        <input name="CORRIENTE_PAGO" type="checkbox" value="SI" id="CORRIENTE_PAGO"
+                            class="form-control col-2" required>
+                        <label for="CORRIENTE_PAGO" class="col-8 text-uppercase">
+                            (DR3)<em class="text-danger">*</em> QUE SE ENCUENTRA AL CORRIENTE DE OBLIGACIONES
+                            TRIBUTARIAS CON LA AGENCIA TRIBUTARIA Y
+                            ESTÁ AL CORRIENTE DE PAGO CON LA SEGURIDAD SOCIAL Y CON LOS TRIBUTOS MUNICIPALES DE SAN
+                            LORENZO DE EL ESCORIAL
+                        </label>
+                    </div>
+
+                    <!-- DR4  -->
+                    <div class="form-group row">
+                        <input name="COM_MODIF" type="checkbox" value="SI" id="COM_MODIF" class="form-control col-2"
+                            required>
+                        <label for="COM_MODIF" class="col-8 text-uppercase">
+                            (DR4)<em class="text-danger">*</em> QUE COMUNICARÁ AL AYUNTAMIENTO DE SAN LORENZO DE EL
+                            ESCORIAL CUALQUIER MODIFICACIÓN
+                            QUE SE PRODUZCA TANTO EN LOS DATOS FACILITADOS COMO EN SU SITUACIÓN COMO PERSONA FÍSICA O
+                            JURÍDICA QUE EJERCE UNA ACTIVIDAD ECONÓMICA.
+                        </label>
+                    </div>
+
+                    <!-- DR5  -->
+                    <div class="form-group row">
+                        <input name="PERMISOS_ADM_PUB" type="checkbox" value="SI" id="PERMISOS_ADM_PUB"
+                            class="form-control col-2" required>
+                        <label for="PERMISOS_ADM_PUB" class="col-8 text-uppercase">
+                            (DR5)<em class="text-danger">*</em> QUE CUENTA CON TODOS LOS PERMISOS EXIGIDOS POR LAS
+                            ADMINISTRACIONES PÚBLICAS
+                            COMPETENTES QUE EJERCEN LA ACTIVIDAD OBJETO DE INFORMACIÓN Y PROMOCIÓN QUE SE SOLICITA.
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <h4 class="card-header text-center text-lg-left font-weight-light">Solicita
+            </h4>
+            <div class="card-body">
+                <div class="form-group">
+                    <p class="text-muted">Que la información de interés turística que se adjunta, se distribuya a través
+                        de los medios y canales disponibles en la Oficina de Turismo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <h4 class="card-header text-center text-lg-left font-weight-light">Documentación aportada
+            </h4>
+            <div class="card-body">
+                <div class="form-group">
+                    <p class="text-muted">Relacione la documentación que se adjunta a la presente (más adelante podrá
+                        adjuntar los ficheros correspondientes relacionados en este apartado)</p>
+                    <textarea name="DOCUMENTACION_APORTADA" id="DOCUMENTACION_APORTADA" class="form-control"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <h4 class="card-header text-center text-lg-left font-weight-light">Protección de Datos
+            </h4>
+            <div class="card-body">
+                <div class="form-group">
+                    <p class="alert alert-info">Los datos de este formulario serán incorporados en el tratamiento
+                        Promoción
+                        turistica, cuyo responsable es el Ayuntamiento de San Lorenzo de El Escorial y el órgano de
+                        gestión la Concejalía de Turismo. Tiene como finalidad realizar la promoción turistica de los
+                        recursos de San Lorenzo de El Escorial. La legitimación es poder realizar la distribución de la
+                        información del interesado. Puede ejercer los derechos de acceso, rectificación, cancelación y
+                        oposición mediante solicitud en el Registro de Entrada de este Ayuntamiento o por sede
+                        electrónica.
+                    </p>
+
+                    <p class="text-muted text-center">
+                        Delegación de Protección de datos: dpd@aytosanlorenzo.es
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
